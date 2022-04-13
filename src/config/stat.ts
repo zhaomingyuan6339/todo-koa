@@ -1,0 +1,33 @@
+const Stat = {
+  Internel_Server_Error: '服务器错误',
+  List_Read_Error: '列表读取失败',
+  File_Read_Error: '文件读取失败，请检查文件名或者路径',
+  File_Write_Error: '文件写入失败',
+  Id_is_Not_Found:'id不能为空！',
+  Id_is_Not_Exist:'id不存在',
+  Todo_Item_Not_Found:'添加事项不能为空！',
+  Completed_Not_Found:'是否完成标识符不能为空',
+  Todo_Item_is_Exist:'该事项已经添加过了！',
+  Err_Tag_Exist: '标签已存在',
+  Err_Account_Must_Needed: '用户名必须填写',
+  Err_Pwd_Must_Needed: '密码必须填写',
+  Account_Or_Password_Not_Correct: '用户名或密码不正确',
+  Err_User_Not_Found: '用户不存在！',
+  Err_User_Not_Login: '请先登录！',
+  Err_Token_Not_Found: '登录超时，请重新登录！',
+  Err_Pwd_Not_Right: '旧密码输入错误',
+  Err_User_Exist: '用户已被注册！',
+  Params_Is_Not_In_Rules: '参数不符合规范',
+  Title_Not_Found: '标题不符合规范',
+  SubTitle_Not_Found: '副标题不符合规范',
+  Content_Not_Found: '文章内容缺失',
+  Tags_Not_Found: '标签不符合规范',
+  Banner_Not_Found: '文章封面不符合规范',
+  Err_File_Not_Found: '文件未找到',
+  Avatar_Not_Found: '头像内容缺失',
+  Nickname_Not_Found: '昵称内容缺失',
+  OldPwd_Not_Found: '旧密码未找到',
+  newPwd_Not_Found: '新密码未找到'
+}
+
+export default Stat

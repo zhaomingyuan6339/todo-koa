@@ -2,9 +2,10 @@
   "name": "ts-todo-server",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "app.ts",
   "scripts": {
-    "dev": "nodemon --watch **/*.ts --exec \"ts-node\" ./src/app.ts"
+    "dev": "nodemon --watch **/*.ts --exec \"ts-node-dev\" ./src/app.ts"
   },
   "keywords": [],
   "author": "",
