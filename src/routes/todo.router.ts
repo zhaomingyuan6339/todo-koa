@@ -5,7 +5,7 @@ import { catchError, check, generateOk, isExistId } from '../utils.ts/check'
 import { readFile, writeFile } from '../utils.ts/jsonFileOperation'
 
 const __FILEPATH = '../data/todo.json'
-const router = new Router({ prefix: '/api' })
+const router = new Router({ prefix: '/api/todo' })
 
 // 获取列表
 router.get(`/todolist`, async (ctx: Context) => {
@@ -17,6 +17,7 @@ router.get(`/todolist`, async (ctx: Context) => {
     catchError(error, ctx)
   }
 })
+
 // 增加项
 router.post(`/add`, async (ctx: Context) => {
   try {
@@ -37,6 +38,7 @@ router.post(`/add`, async (ctx: Context) => {
     catchError(error, ctx)
   }
 })
+
 // 删除项
 router.post(`/remove`, async (ctx: Context) => {
   try {
@@ -55,6 +57,7 @@ router.post(`/remove`, async (ctx: Context) => {
     catchError(error, ctx)
   }
 })
+
 // toggle
 router.post(`/toggle`, async (ctx: Context) => {
   try {
@@ -69,7 +72,6 @@ router.post(`/toggle`, async (ctx: Context) => {
       todolist.map(todo => {
         if (todo.id === id) {
           todo.completed = !todo.completed
-          console.log(todo.completed)
         }
         return todo
       }),

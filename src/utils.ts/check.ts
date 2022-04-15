@@ -32,10 +32,9 @@ function generateOk<T>(data?: T) {
 }
 
 // 检查数组中是否存在该id
-function isExistId(arr: ITodoData[], id: string) {
+function isExistId<U extends { id: string }>(arr: Array<U>, id: string) {
   for (let item of arr) {
     while (item.id === id) {
-      console.log(item.id, id)
       return true
     }
   }
